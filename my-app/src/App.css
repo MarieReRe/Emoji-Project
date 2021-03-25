@@ -2,37 +2,137 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper{
+  padding:10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+Header {
+  padding:10px;
+  text-align: right;
+  display:flex;
+  font-family: 'Lato', sans-serif;
+}
+
+Header img {
+  width: 25%;
+}
+nav{
+  padding:0;
+}
+
+a {
+  padding: 10px;
+  position: sticky;
+  text-align: left;
+  font: normal normal medium 18px/35px Avenir Next;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+}
+button{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 5px;
+  color:#E74010;
+
+}
+button:hover{
+  box-shadow: 0px 2px 6px #00000029;
+}
+
+/* Home Styles */
+body img {
+  padding-top: 25px;
+  margin-top: 15px;;
+  width: 25%;
+}
+.subheading {
+  text-align: left;
+font: normal normal medium 12px/15px Montserrat;
+letter-spacing: 0px;
+color: #404040;
+opacity: 0.6;
+}
+.heading {
+  text-align: left;
+  font: normal normal 600 20px/25px Montserrat;
+  letter-spacing: 0px;
+  color: #081C36;
+}
+.mid button {
+  text-align: center;
+  font: normal normal 600 14px/35px Montserrat;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  background: #E74010 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 21px #65656536;
+  border-radius: 10px;
+  opacity: 1;
+}
+/* IPads and Tablets */
+@media (min-width: 481px) {
+  .text {
+    font-size: 18px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Small Screens & Laptops */
+@media (min-width: 769px) {
+  .text {
+    font-size: 16px;
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+/* Desktops & large screens */
+@media (min-width: 1025px) {
+  .text {
+    font-size: 16px;
+  }
+  /* Home Styles */
+  body img {
+    width: 25%;
+  }
+  .subheading {
+    text-align: left;
+    font: normal normal 600 33px/45px Montserrat;
+    letter-spacing: 0px;
+    color: #404040;
+    opacity: 0.6;
+  }
+  .heading {
+    text-align: left;
+    font: normal normal 600 90px/120px Montserrat;
+    letter-spacing: 0px;
+    color: #081C36;
+    opacity: 1;
+    margin: -10px;
+  }
+
+  .mid button {
+    text-align: center;
+    font: normal normal 600 18px/35px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    background: #E74010 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 21px #65656536;
+    border-radius: 10px;
+    opacity: 1;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Extra Large Screens */
+@media (min-width: 1201px) {
+  .text {
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
+
+
+

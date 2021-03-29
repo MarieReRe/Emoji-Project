@@ -1,15 +1,28 @@
 import React from 'react';
-import Header from './components/header/header';
-import Home from './home/index';
+import Header from './components/global/navigation';
+import Slogan from './components/home/slogan';
+import DailyDrop from './components/dailyDrop/dailyDrop';
+import CurrentPacks from './components/emojiPacks/emojiPacks';
+import SeriesCompletion from './components/seriesCompletion/completion.js';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <>
-    <div>
+    <body>
+      <main>
       <Header />
-      <Home/>
+      <div  class='wrapper'>
+      <Slogan/>
+      <DailyDrop/>
+      <CurrentPacks/>
+      <SeriesCompletion/>
      </div>
+      </main>
+    </body>
+
     </>
   );
 }

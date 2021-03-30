@@ -69,8 +69,8 @@ export default function Spots() {
             {/* LOWER LEVEL */}
             <svg>
                 <circle r="100"
-                    cy="630" 
-                    cx="90"
+                    cy="200" 
+                    cx="70"
                     fill="#FFFF99"  
                 />
             </svg>

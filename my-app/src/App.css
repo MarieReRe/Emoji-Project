@@ -1,6 +1,7 @@
 
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 .pull-left{
   float: left !important;
@@ -22,49 +23,7 @@ Header {
 .logo {
   width: 45%;
 }
-header button.btn.btn-link {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  color:#E74010;
-  opacity: 1;
-}
 
-header button.btn.btn-link:hover{
-  box-shadow: 0px 2px 6px #00000029;
-
-}
-.navbar-light .navbar-toggler{
-  border: none !important;
-  align-items: flex-start;
-}
-
-a.nav-link{
-  text-align: right;
-  font: normal normal 600 18px/35px Montserrat !important;
-  letter-spacing: 0px;
-  color:#E74010 !important;
-  text-transform: uppercase;
-  opacity: 1;
-  border-bottom: 1px solid #cfd4d9;
-  padding-top: none;
-}
-.nav .navbar-nav {
-  display: block;
-  padding: 10px;
-  position: sticky;
-  text-align: left;
-  font: normal normal 600 18px/35px Montserrat;
-  letter-spacing: 0px;
-  color: #000000;
-  text-transform: uppercase;
-  opacity: 1;
-  text-decoration: none;
- position: fixed;
-}
-nav.navbar.navbar-expand-md.navbar-light{
-  padding-left: 25px;
-  display: block;
-  border: none;
-}
 
 
 /* Home Styles */
@@ -76,7 +35,7 @@ body img {
   font: normal normal 600 20px/35px Montserrat;
   letter-spacing: 0px;
   color: #081C36;
-  margin-top: 25px;
+  margin-top: -1325px;
   z-index: 1;
 }
 .subheading {
@@ -93,6 +52,9 @@ body img {
   width: 55%;
   z-index: -1;
   padding-top: 25px;
+}
+.dailyDrop{
+  margin:10px;
 }
 .drops{
   text-align: left;
@@ -210,8 +172,8 @@ body img {
     width: 10%;
     padding-left: 35px;;
   }
-  a {
-    padding: 10px;
+  .wrapper{
+    padding:10%;
   }
   /* Home Styles */
   body img {
@@ -223,17 +185,9 @@ body img {
   }
   .heading {
     font: normal normal 600 90px/120px Montserrat;
-    margin-top: 200px;
   }
 }
 
-/* Extra Large Screens */
-@media (min-width: 1201px) {
-  .text {
-    font-size: 16px;
-  }
-
-}
 .limitedEditionDrop .grid-countdown{
   grid-area: countdown;
   padding-bottom: 5px;
@@ -246,6 +200,12 @@ body img {
 }
 .limitedEditionDrop .grid-superRarePack{
   grid-area: superRarePack;
+}
+
+/* SVG STYLING */
+svg{
+  overflow:visible !important;
+  z-index: -1 !important;
 }
 
 

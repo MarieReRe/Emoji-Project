@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from './components/global/navigation';
+import NavBar from './components/navbar';
+import Spots from './components/spots';
 import Slogan from './components/home/slogan';
 import DailyDrop from './components/dailyDrop/dailyDrop';
 import CurrentPacks from './components/emojiPacks/emojiPacks';
@@ -11,10 +12,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
+    
     <body>
+    <NavBar/>
+
       <main>
-      <Header />
+      
       <div  class='wrapper'>
+      <Spots/>
       <Slogan/>
       <DailyDrop/>
       <CurrentPacks/>

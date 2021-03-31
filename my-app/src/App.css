@@ -35,7 +35,7 @@ body img {
   font: normal normal 600 20px/35px Montserrat;
   letter-spacing: 0px;
   color: #081C36;
-  margin-top: -1325px;
+  margin-top: -1290px;
   z-index: 1;
 }
 .subheading {
@@ -47,14 +47,62 @@ body img {
   margin:0;
   padding: 0px 0px 12px 0px;
 }
-
+.slogan{
+  margin: 0 0 0 25px;
+}
 .slogan img{
   width: 55%;
   z-index: -1;
   padding-top: 25px;
 }
 .dailyDrop{
-  margin:10px;
+  margin-bottom:50px;
+}
+.dailyDrop .dailyDropCountdown{
+  margin-left: 190px;
+  margin-top: -145px;
+  display: flex;
+  width: 14px;
+}
+.dailyDrop .dailyDropCountdown div{
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.dailyDrop .dailyDropCountdown .countdown{
+  align-items: center;
+  font: normal normal 800 12px/20px Montserrat;
+  padding:15px;
+}
+.dailyDrop .dailyDropCountdown .countdown:not(:last-of-type) {
+  border-right: 2px solid #bbbbbb36 ;
+
+}
+/* Limited Edition */
+.limitedEditionDrop .dailyDropCountdown{
+  display: flex;
+  width: 14px;
+}
+.limitedEditionDrop .dailyDropCountdown div{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.limitedEditionDrop .dailyDropCountdown .countdown{
+  align-items: center;
+  font: normal normal 800 12px/20px Montserrat;
+  padding:15px;
+}
+.limitedEditionDrop .dailyDropCountdown .countdown:not(:last-of-type) {
+  border-right: 2px solid #bbbbbb36 ;
+
+}
+
+
+.dailyDrop img{
+  width: 40%;
+  margin-top: 50px
 }
 .drops{
   text-align: left;
@@ -62,7 +110,7 @@ body img {
   letter-spacing: 0px;
   color:#E74010;
   opacity: 0.6;
-  margin:0;
+  margin-top: 45px;
   padding: 10px 0px 0px 0px;
 }
 .drops p{
@@ -87,18 +135,24 @@ body img {
   padding: 0 15px 0 15px;
 }
 .limitedEditionDrop img{
-  width: 100%;
-  margin: -20px;
+  width: 130%;
+  margin-bottom: 15px;
 }
 .limitedEditionDrop{
   padding: 0;
-  margin: 0;
+  margin-bottom: 100px;
   display: grid;
-  grid-template:"countdown countdown countdown""commonPack rarePack superRarePack"  1fr;
+  grid-template:"title title title"
+                "countdown countdown countdown"
+                "commonPack rarePack superRarePack"  1fr;
 }
   .limitedEditionDrop .purchaseButton{
-    margin-left: 5px;
+    margin-left: 35px;
     margin-top:10px;
+  }
+
+  .limitedEditionDrop .grid-title{
+    margin-left: 90px;
   }
 
 
@@ -187,8 +241,11 @@ body img {
     font: normal normal 600 90px/120px Montserrat;
   }
 }
-
-.limitedEditionDrop .grid-countdown{
+.limitedEditionDrop .grid-title{
+  grid-area: title;
+  padding-bottom: 5px;
+}
+.limitedEditionDrop .dailyDropCountdown{
   grid-area: countdown;
   padding-bottom: 5px;
 }

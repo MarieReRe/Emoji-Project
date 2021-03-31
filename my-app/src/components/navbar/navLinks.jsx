@@ -41,34 +41,34 @@ text-transform: uppercase;
 opacity: 1;
 `;
 
-export default function NavigationLinks(props){
-    return(
-      <>
-          <NavLinksContainer>
-      <LinksWrapper>
-        <LinkItem>
-          <Link href="#">Packs</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="#">Artist Collabs</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="#">Daily Drops</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="#">Marketplace</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="#">Emoji® icons</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="#">Top Collectors</Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href="#">Bingo</Link>
-        </LinkItem>
-      </LinksWrapper>
-    </NavLinksContainer>
-        </> 
-      );
+export default function NavigationLinks(props) {
+  return (
+    <>
+      <NavLinksContainer>
+        <LinksWrapper>
+          <LinkItem>
+            <Link href="#">Packs</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#">Artist Collabs</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#">Daily Drops</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#">Marketplace</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#">Emoji® icons</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#">Top Collectors</Link>
+          </LinkItem>
+          <LinkItem>
+            <Link href="#">Bingo</Link>
+          </LinkItem>
+        </LinksWrapper>
+      </NavLinksContainer>
+    </>
+  );
 }

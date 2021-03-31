@@ -1,5 +1,7 @@
 import React from 'react';
 import stPaddysEmoji from '../../assets/images/stPaddysEmoji.png'
+import DailyDropCountdown from '../countdown/countdown';
+
 
  function DailyDrop() {
     return (
@@ -9,6 +11,7 @@ import stPaddysEmoji from '../../assets/images/stPaddysEmoji.png'
                     <img src={stPaddysEmoji} alt='Saint Patricks Day Emoji with a green mohawk, sunglasses with sparkling shamrocks, tongue sticking out and holding up a peace sign' />
                     </div>
                     <div>
+                        <DailyDropCountdown date={"2021-04-03"}/>
                         <h5 class="drops">DAILY DROP</h5>
                         <h4>
                          St. Patrick’s Day emoji®

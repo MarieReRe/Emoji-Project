@@ -30,7 +30,7 @@ const RightSection = styled.div`
 `;
 
 export default function Navbar() {
-  const isSmallScreen = useMediaQuery({ maxWidth: DeviceSize.tablet});
+  const isSmallScreen = useMediaQuery({ maxWidth: DeviceSize.tablet });
 
   return (
     <NavbarContainer>

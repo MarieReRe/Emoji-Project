@@ -9,24 +9,21 @@ import MobileNavLinks from "./mobileNavLinks";
 
 const NavbarContainer = styled.div`
   width: 100%;
-  height: 60px;
+  height: 100px;
   display: flex;
   padding: 0 1.5em;
+  margin:10px; 
 `;
 
 const LeftSection = styled.div`
   display: flex;
-`;
-
-const MiddleSection = styled.div`
-  display: flex;
-  flex: 2;
-  height: 100%;
-  justify-content: center;
+  margin-left: 50px;
 `;
 
 const RightSection = styled.div`
   display: flex;
+
+
 `;
 
 export default function Navbar() {
@@ -36,8 +33,8 @@ export default function Navbar() {
     <NavbarContainer>
       <LeftSection>
         <Logo />
+        {!isSmallScreen && <NavLinks />}
       </LeftSection>
-      <MiddleSection>{!isSmallScreen && <NavLinks />}</MiddleSection>
       <RightSection>
         {!isSmallScreen && <Accessibility />}
         {isSmallScreen && <MobileNavLinks />}

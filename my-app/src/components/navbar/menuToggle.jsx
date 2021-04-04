@@ -22,7 +22,7 @@ const transition = { duration: 0.33 };
 export default function MenuToggle({ toggle, isOpen }) {
   return (
     <Button onClick={toggle}>
-      <svg width="23" height="23" viewBox="0 0 23 23">
+      <svg width="75" viewBox="0 0 75 75">
         <Path
           animate={isOpen ? "open" : "closed"}
           initial={false}

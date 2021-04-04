@@ -4,6 +4,7 @@ import EmojiLogo from "../../assets/images/emoji-logo.png";
 
 const LogoWrapper = styled.div`
   display: flex;
+  margin-right: 225px;
 `;
 
 const LogoImg = styled.div`

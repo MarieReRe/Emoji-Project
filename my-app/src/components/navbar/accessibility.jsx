@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const AccessibilityContainer = styled.div`
   display: flex;
-  margin-left: 15px;
+  margin-top: 50px;
+  margin-left: 50px;
 `;
 
 const NavButton = styled.button`
@@ -13,8 +14,8 @@ const NavButton = styled.button`
   border:none;
   border-radius: 5px;
   opacity: 1;
-  margin: 0;
-
+  margin: 5px;
+  width: 128px;
   cursor: pointer;
     &:hover {
       box-shadow: 0px 2px 6px #00000029;

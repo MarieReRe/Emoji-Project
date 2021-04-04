@@ -1,0 +1,117 @@
+
+.slogan{
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template: "heading heading sloganImg "
+                    "subheading subheading sloganImg"
+                    "button button sloganImg"/ 100px 200px auto;
+  }
+  .grid-heading{
+    text-align: left;
+  font: normal normal 600 20px/30px Montserrat;
+  letter-spacing: 0px;
+  color: #081C36;
+  opacity: 1;
+  }
+  .grid-subheading{
+    text-align: left;
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #404040;
+    opacity: 0.6;
+  }
+  .grid-sloganImg{
+    width: 100%;
+    margin: 0 0 0 -45px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Small Devices */
+  @media (min-width: 650px) {
+    .grid-heading{
+      font: normal normal 600 30px/35px Montserrat;
+      } 
+    
+    .grid-subheading{
+        font: normal normal 600 18px/30px Montserrat;
+      }
+  }
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  
+  .grid-heading{
+    font: normal normal 600 50px/75px Montserrat;
+    } 
+  
+  .grid-subheading{
+      font: normal normal 600 24px/35px Montserrat;
+    }
+    .grid-sloganImg{
+      width: 100%;
+    }
+    .slogan{
+      grid-template: "heading heading sloganImg "
+                      "subheading subheading sloganImg"
+                      "button button sloganImg"/ 1fr auto 1fr;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .wrapper{
+      margin: 150px;
+    }
+    .grid-heading{
+      font: normal normal 600 50px/75px Montserrat;
+   
+      } 
+    
+    .grid-subheading{
+        font: normal normal 600 24px/35px Montserrat;
+      }
+    
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+.wrapper{
+ margin: 271px;
+}
+
+.grid-heading{
+ font: normal normal 600 90px/120px Montserrat;
+ margin-bottom: -140px;
+ margin-bottom: 0;
+ } 
+.grid-subheading{
+   font: normal normal 600 33px/45px Montserrat;
+   margin-bottom: 0;
+ }
+.slogan{
+   grid-template: "heading heading sloganImg "
+                   "subheading subheading sloganImg"
+                   "button button sloganImg"/ 1fr auto 700px;
+ }
+  
+  }
+  
+  /* grid layouts */
+  .slogan .grid-sloganImg{
+    grid-area: sloganImg;
+  }
+  .slogan .grid-heading{
+    grid-area: heading;
+  }
+  .slogan .grid-subheading{
+    grid-area: subheading;
+  }
+  .slogan .grid-button{
+    grid-area: button;
+  }
+  

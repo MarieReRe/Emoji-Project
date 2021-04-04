@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import '../../assets/css/nav.css'
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -17,18 +18,18 @@ const LinksWrapper = styled.ul`
 `;
 
 const LinkItem = styled.li`
-  height: 100%;
   padding: 0 1.1em;
   color: #222;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-bottom: 5px;
   border-top: 2px solid transparent;
   transition: all 220ms ease-in-out;
   &:hover {
-    border-top: 2px solid #E74010;
+    border-bottom: 2px solid #E74010;
   }
 `;
 
@@ -39,6 +40,10 @@ letter-spacing: 0px;
 color: #000000;
 text-transform: uppercase;
 opacity: 1;
+&:hover {
+  color:#E74010;
+    text-decoration: none;
+}
 `;
 
 export default function NavigationLinks(props) {

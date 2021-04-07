@@ -44,7 +44,7 @@ export default function Countdown(props) {
         );
     });
     return (
-        <div class="dailyDropCountdown">
+        <div class="dropCountdown">
             {timerComponents ? timerComponents : <span>Time's up!</span>}
         </div>
     );

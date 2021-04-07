@@ -2,3 +2,8 @@
 .wrapper{
   margin: 50px;
 }
+body{
+  background-image: url(/src/assets/images/1.png);
+  background-repeat:repeat;
+  background-size:100%;
+}

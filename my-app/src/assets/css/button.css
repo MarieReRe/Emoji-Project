@@ -12,6 +12,7 @@
     width: 130px;
     height: fit-content;
     margin-right: 10px;
+    margin-bottom: 10px;
   }
 .previousButton{
   font: normal normal 600 10px/35px Montserrat;
@@ -21,27 +22,60 @@
   border:none;
   opacity: 1;
   width: 130px;
+  margin-bottom: 10px;
+}
+.discoverButton{
+  font: normal normal 600 10px/35px Montserrat;
+  background: #FFFE4B 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 21px #68676736;
+  border-radius: 10px;
+  border:none;
+  opacity: 1;
+  width: 175px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left:30px;
 }
   /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-.purchaseButton .purchaseButton{
+.purchaseButton{
     width: 130px;
   }
-    
+  .discoverButton{
+    width: 130px;
+    height: 57px;
+  }  
   }
   
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-
-    
+    .discoverButton{
+      font: normal normal 500 18px/35px Montserrat;
+      width: 275px;
+      height: 57px;
+      margin-top: 50px;
+    }
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
-    .purchaseButton .previousButton{
-      font: normal normal 500 18px/35px Montserrat;
-      width: 275px;
-      height: 57px;
-    }  
+.purchaseButton{
+  font: normal normal 500 18px/35px Montserrat;
+  width: 275px;
+  height: 57px;
+  margin-top: 50px;
+}  
+.previousButton{
+  font: normal normal 500 18px/35px Montserrat;
+  width: 275px;
+  height: 57px;
+  margin-top: 50px;
+}
+.discoverButton{
+  font: normal normal 500 18px/35px Montserrat;
+  width: 275px;
+  height: 57px;
+  margin-top: 50px;
+}
   }
   

@@ -1,0 +1,109 @@
+/* Grid layout */
+.limitedEditionDrop .grid-countdown{
+    grid-area: countDown;
+  }
+
+.limitedEditionDrop .grid-title{
+  grid-area: title;
+}
+.limitedEditionDrop .grid-commonPack{
+    grid-area: common;
+  }
+  .limitedEditionDrop .grid-commonPackButton{
+    grid-area: commonButton;
+  }
+
+.limitedEditionDrop .grid-rarePack{
+  grid-area: rare;
+}
+.limitedEditionDrop .grid-rarePackButton{
+    grid-area: rareButton;
+  }
+.limitedEditionDrop .grid-superRarePack{
+    grid-area: superRare;
+  }
+  .limitedEditionDrop .grid-superRarePackButton{
+    grid-area: superRareButton;
+  }
+
+  .limitedEditionDrop .limitedEditionCountdown  div{
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.limitedEditionDrop .dropCountdown {
+  margin-left: -50px;
+}
+
+.limitedEditionDrop img{
+    width: 100%;
+}
+.limitedEditionDrop button{
+    margin-left: 30px;
+}
+.limitedEditionDrop {
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    column-gap: 10px;
+    grid-template:
+    "title title countDown"
+    "common rare superRare"
+    "commonButton rareButton superRareButton"
+    / 1fr 1fr 1fr;
+}
+@media (min-width: 650px) {
+  .limitedEditionDrop {
+    grid-template:
+    "title title countDown"
+    "common rare superRare"
+    "commonButton rareButton superRareButton"
+    / 1fr 1fr 1fr;
+}
+.grid-title{
+  margin-left: 45px;
+}
+
+  .limitedEditionDrop button{
+    width: 120px;
+    margin-left: 15px;;
+}
+}
+
+@media (min-width: 768px) {
+  .limitedEditionDrop button{
+    width: 180px;
+    margin-left:  45px;
+}
+.limitedEditionDrop .dropCountdown {
+  margin-left: -160px;
+}
+
+
+}
+@media (min-width: 992px) {
+   
+  .limitedEditionDrop .dropCountdown {
+    margin-left: -75px;
+  }
+  .drops{
+    font: normal normal 800 18px/55px Montserrat;
+  }
+  .grid-title .nextTitle{
+    font: normal normal 600 24px/35px Montserrat;
+  }
+}
+
+@media (min-width: 1200px) {
+  .limitedEditionDrop .dropCountdown {
+    margin-left: -270px;
+  }
+  .drops{
+    font: normal normal 800 25px/55px Montserrat;
+  }
+  .grid-title .nextTitle{
+    font: normal normal 600 36px/50px Montserrat;
+  }
+  .limitedEditionDrop button{
+    margin-left: 150px;
+}
+}

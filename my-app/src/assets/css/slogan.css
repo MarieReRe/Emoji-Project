@@ -3,9 +3,9 @@
     margin-top: 100px;
     width: 100%;
     display: grid;
-    grid-template: "heading heading sloganImg "
-                    "subheading subheading sloganImg"
-                    "button button sloganImg"/ 100px 200px auto;
+    grid-template: "heading sloganImg starry "
+    "subheading sloganImg starry"
+    "button sloganImg starry"/ 200px 300px auto ;
   }
   .grid-heading{
     text-align: left;
@@ -23,12 +23,36 @@
   }
   .grid-sloganImg{
     width: 100%;
-    margin: 0 0 0 -45px;
+
   }
   
+ .grid-starry{
+  box-shadow: 0px 1px 21px #68676736;
+  border-radius: 5px;
+  width: 205px;
+  height: 30px;
+  margin-left:-180px;
+  margin-top: -5px;
+ } 
   
-  
-  
+ .grid-cool{
+  box-shadow: 0px 1px 21px #68676736;
+  border-radius: 5px;
+  width: 190px;
+  height: 45px;
+  margin-left:-160px;
+  margin-top: 65px;
+ } 
+
+ .grid-mindBlown{
+  box-shadow: 0px 1px 21px #68676736;
+  border-radius: 5px;
+  width: 190px;
+  height: 45px;
+  margin-left:170px;
+  margin-top: -126px;
+  z-index:1;
+ } 
   
   
   
@@ -40,6 +64,13 @@
     
     .grid-subheading{
         font: normal normal 600 18px/30px Montserrat;
+      }
+      .grid-sloganImg{
+       margin-left: 125px;
+      }
+      .grid-mindBlown{
+        margin-left: 240px;
+        margin-top: -130px;
       }
   }
   /* Medium devices (tablets, 768px and up) */
@@ -56,10 +87,18 @@
       width: 100%;
     }
     .slogan{
-      grid-template: "heading heading sloganImg "
-                      "subheading subheading sloganImg"
-                      "button button sloganImg"/ 1fr auto 1fr;
+      grid-template: "heading sloganImg starry "
+                      "subheading sloganImg starry"
+                      "button sloganImg starry"/ 400px 400px auto ;
     }
+    .grid-sloganImg{
+      width: 125%;
+     margin: 0;
+   }
+   .grid-mindBlown{
+    margin-left: 340px;
+    margin-top: -230px;
+  }
   }
   
   /* Large devices (desktops, 992px and up) */
@@ -75,6 +114,15 @@
     .grid-subheading{
         font: normal normal 600 24px/35px Montserrat;
       }
+      .grid-mindBlown{
+        margin-left: 1040px;
+        margin-top: -300px;
+      }
+      .grid-cool{
+        margin-left: -800px;
+     
+      }
+
     
   }
   
@@ -86,7 +134,6 @@
 
 .grid-heading{
  font: normal normal 600 90px/120px Montserrat;
- margin-bottom: -140px;
  margin-bottom: 0;
  } 
 .grid-subheading{
@@ -94,10 +141,18 @@
    margin-bottom: 0;
  }
 .slogan{
-   grid-template: "heading heading sloganImg "
-                   "subheading subheading sloganImg"
-                   "button button sloganImg"/ 1fr auto 700px;
+   grid-template:  "heading sloganImg starry "
+   "subheading sloganImg starry"
+   "button sloganImg starry"/ 1000px 700px;
  }
+ .grid-sloganImg{
+  margin: 0 0 0 -85px;
+}
+.grid-starry{
+      
+  margin-left:-320px;
+  margin-top: 40px;
+ } 
   
   }
   
@@ -114,4 +169,9 @@
   .slogan .grid-button{
     grid-area: button;
   }
+  .slogan .grid-starry{
+    grid-area: starry;
+  }
+
+
   

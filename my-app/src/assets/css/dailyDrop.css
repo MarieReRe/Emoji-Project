@@ -7,11 +7,8 @@
   grid-area: countdown;
 
 }  
-.dailyDrop .grid-drops{
-  grid-area: drops;
-  color:#E74010;
-}
-.dailyDrop .grid-dropTitle{
+
+.dailyDrop .grid-dropsTitle{
   grid-area: title;
 }
 
@@ -19,20 +16,21 @@
   grid-area: dropsDescription;
 }
 .dailyDrop .grid-buttons{
-  grid-area: bittons;
+  grid-area: buttons;
 }
-.dropWrapper{
-    margin:25px;
+.dailyDrop{
+  width: 100%;
 }
 .dailyDrop img{
     width: 100%;
+    margin-top:50px;
 }
-.dailyDrop .grid-drops{
+.drops{
     margin-top: 20px;
     font: normal normal 600 16px/20px Montserrat;
     color:#E74010;
   }
-.dailyDrop .grid-dropTitle{
+.dropTitle{
     margin-top: 20px;
     font: normal normal 800 25px/30px Montserrat;
     color:#000000;
@@ -42,63 +40,33 @@
   font: normal normal 600 14px/16px Montserrat;
   color:#000000;
 }
+.dailyDrop .dropCountdown{
+  margin-left: -15px;
+}
 
-.dailyDrop .dailyDropCountdown{
-    display: flex;
-    text-align: center;;
-    width: 14px;
-    margin: 10px;
-    padding-bottom: 10px;
-  }
-.dailyDrop .dailyDropCountdown div{
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-  .dailyDrop .dailyDropCountdown .countdown{
-    align-items: center;
-    font: normal normal 600 16px/20px Montserrat;
-    padding:15px;
-}
-.countdown .timeLeft{
-    color:#E74010;
-    font: normal normal 800 30px/20px Montserrat;
-    margin-bottom: 20px;
-}
-.dailyDrop .dailyDropCountdown .countdown:not(:last-of-type) {
-    border-right: 2px solid #58585836 ;
 
-}
+  
 .dailyDrop {
     margin-top: 100px;
     width: 100%;
     display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
     grid-template:
     "dailyEmoji countdown"
-    "dailyEmoji drops"
     "dailyEmoji title"
     "dailyEmoji dropsDescription"
     "dailyEmoji buttons"
-    / 300px auto;;
+    / 1fr 1fr;
 }
 
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-.dailyDrop {
-    margin-top: 100px;
-    width: 100%;
-    display: grid;
-    grid-template:
-    "dailyEmoji countdown"
-    "dailyEmoji drops"
-    "dailyEmoji title"
-    "dailyEmoji dropsDescription"
-    "dailyEmoji buttons"
-    / 350px auto;
-}
-.dailyDrop .grid-drops{
+
+.drops{
     font: normal normal 600 16px/20px Montserrat;
   }
-  .dailyDrop .grid-dropTitle{
+  .dropTitle{
     font: normal normal 800 40px/55px Montserrat;
 }
 .dailyDrop .grid-dropDescription{
@@ -109,44 +77,14 @@
   
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
-    .dailyDrop {
-        margin-top: 100px;
-        width: 100%;
-        display: grid;
-        grid-template:
-        "dailyEmoji countdown"
-        "dailyEmoji drops"
-        "dailyEmoji title"
-        "dailyEmoji dropsDescription"
-        "dailyEmoji buttons"
-        / 400px auto;
-    }
-    .dailyDrop .grid-drops{
+    .drops{
         font: normal normal 600 18px/25px Montserrat;
       }
-      .dailyDrop .grid-dropTitle{
+      .dropTitle{
         font: normal normal 800 65px/85px Montserrat;
     }
     .dailyDrop .grid-dropDescription{
       font: normal normal 400 18px/30px Montserrat;
     }
-
-    .dailyDrop .dailyDropCountdown .countdown{
-        font: normal normal 400 55px/20px Montserrat;
-        padding:15px;
-        height: 164px;
-    }
-    .countdown .timeLeft{
-        font: normal normal 800 60px/85px Montserrat;
-        letter-spacing: 2.5px;
-        opacity: 1;
-        margin: 15px;
-    }
-    .dailyDrop .dailyDropCountdown .countdown:not(:last-of-type) {
-        border-right: 4px solid #58585836 ;
-    
-    }
-
-
   }
   

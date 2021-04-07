@@ -7,6 +7,7 @@ import holographicPoo from '../../assets/images/holographicPoo.png';
     return (
         <>
                 <div class='seriesCompletion'>
+                    <div class="grid-completeSeriesTitle">
                     <h6>
                      SERIES 1
                     </h6>
@@ -14,12 +15,16 @@ import holographicPoo from '../../assets/images/holographicPoo.png';
                      Follow the guide to complete your series<br/>
                      View the complete set for series 1.
                     </h2>
-                    <button class="purchaseButton">
+                    </div>
+                   
+                    <button class="grid-discover discoverButton">
                          DISCOVER EMOJI ICONS
                     </button>
-                    <img class="fairyPoo" src={fairyPoo} alt='Series 1 Fairy Poo Emoji' />
-                    <img class="burningPoo" src={burningPoo} alt='Series 1 Burning Poo Emoji' />
-                    <img class="holoPoo" src={holographicPoo} alt='Series 1 Holographic Poo Emoji' />
+                    <div class="grid-emojiContainer">
+                    <img class="emoji-1" src={fairyPoo} alt='Series 1 Fairy Poo Emoji' />
+                    <img class="emoji-2" src={burningPoo} alt='Series 1 Burning Poo Emoji' />
+                    <img class="emoji-3" src={holographicPoo} alt='Series 1 Holographic Poo Emoji' />
+                    </div>
                 </div>
 
         </>

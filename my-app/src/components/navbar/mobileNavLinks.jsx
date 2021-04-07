@@ -44,9 +44,6 @@ const Link = styled.a`
   
 `;
 
-const Marginer = styled.div`
-  height: 2em;
-`;
 
 export default function MobileNavigation(props) {
   const [isOpen, setOpen] = useState(false);
@@ -77,7 +74,6 @@ export default function MobileNavigation(props) {
         <LinkItem>
           <Link href="#">Bingo</Link>
         </LinkItem>
-          <Marginer />
           <Accessibility />
         </LinksWrapper>
       )}

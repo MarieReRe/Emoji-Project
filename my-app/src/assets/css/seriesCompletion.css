@@ -1,0 +1,119 @@
+.seriesCompletion{
+    margin-top: 100px;
+    background: transparent linear-gradient(92deg, #FF5C5C 0%, #FFD21F 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    display: grid;
+    column-gap: 10px;
+    grid-template:
+    "title title"
+    "button container"
+
+   
+    / 1fr 1fr;
+  }
+
+
+/* Grid */
+.seriesCompletion .grid-completeSeriesTitle{
+    grid-area: title;
+  }
+
+  .seriesCompletion .grid-discover{
+  grid-area: button;
+}
+.seriesCompletion .grid-emojiContainer{
+    grid-area: container;
+  }
+
+
+ 
+.seriesCompletion h6{
+  color:#FFF61F;
+  letter-spacing: 0.27px;
+  font: normal normal 600 18px/25px Montserrat;
+  text-align: left;
+  margin-top: 25px;
+  padding-left:30px;
+}
+.seriesCompletion h2{
+  color:#FFFFFF;
+  text-align: left;
+  letter-spacing: 0.27px;
+  font: normal normal 600 18px/25px Montserrat;
+  padding-left:30px;
+
+}
+
+.emoji-1{
+    background: 0% 0% no-repeat padding-box;
+    width: 50%;
+    margin-left: 100px;
+    margin-top:-50px;
+  }
+  .emoji-2{
+    background: 0% 0% no-repeat padding-box;
+    width: 50%;
+    margin-left: 15px;
+    margin-top: -140px;
+    z-index: -1;
+  }
+  .emoji-3{
+    background: 0% 0% no-repeat padding-box;
+    width: 50%;
+    margin-top: -65px;
+    margin-left:-60px;
+    z-index: 1;
+  }
+  
+
+  @media (min-width: 768px) {
+    .seriesCompletion button{
+        margin-left:30px;
+
+    }
+    .emoji-1{
+        margin-left: 130px;
+        margin-top:-45px;
+
+      }
+      .emoji-2{
+        margin-left: 15px;
+        margin-top: -250px;
+      }
+      .emoji-3{
+        margin-top: -100px;
+        margin-left:-100px;
+      }
+  }
+  @media (min-width: 992px) {
+  }
+
+  @media (min-width: 1200px) {
+      
+.seriesCompletion h6{
+    font: normal normal 600 18px/25px Montserrat;
+    padding-left:60px;
+    padding-top: 60px;
+  }
+  .seriesCompletion h2{
+    font: normal normal 600 32px/39px Montserrat;
+    padding-left:60px;
+  }
+  .seriesCompletion button{
+    margin-left:60px;
+
+}
+.emoji-1{
+    margin-left: 305px;
+    margin-top:-170px;
+
+  }
+  .emoji-2{
+    margin-left: 50px;
+    margin-top: -510px;
+  }
+  .emoji-3{
+    margin-top: -220px;
+    margin-left:-185px;
+  }
+}
